@@ -1,7 +1,10 @@
-tracer.property: "I AM THE DEFAULT FROM GIT"
+tracer.property: "I AM THE DEFAULT"
 
 spring:
   jpa:
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
     properties:
       hibernate:
